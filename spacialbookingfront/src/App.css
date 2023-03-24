@@ -1,0 +1,17 @@
+:root {
+    --primary-color: #a7afc7;
+    --secondary-color: #1D2951;
+    --tertiary-color: #333;
+    --fourth-color:#4C3B71;
+    --icon-size: 24px;
+    --font-size: 16px;
+ 
+  }
+  
+
+body{
+  background-blend-mode: multiply;
+  padding-top: 10.5vh;
+}
+
+

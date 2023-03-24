@@ -1,0 +1,101 @@
+
+
+ [
+    {   
+        "id" : 1,
+        "url": "./img/neptune.webp",
+        "category": "Globo estratosférico",
+        "company": "World View",
+        "name": "World View capsule",
+        "altitude": 30000,
+        "price": 50000,
+        "location": "Estratosfera",
+        "duration": "6-8 Horas",
+        "description": "Observa increíbles maravillas de nuestro planeta  como la Gran Barrera de Coral,la región Amazónica,la Aurora Boreal, la Gran Muralla China, entre otras desde la estratosfera terrestre. ¡Una vista única e inolvidable!."
+    },
+    {
+        "id": 2,
+        "url": "./img/worldview.webp",
+        "category": "Globo estratosférico",
+        "company": "Space Perspective",
+        "name": "Neptune capsule",
+        "altitude": 30000,
+        "price": 125000,
+        "location": "Estratosfera",
+        "duration": "6-8 horas",
+        "description": " Gracias a la cápsula Neptune de Space Perspective podrás experimentar la obscuridad espacial y ver las estrellas como nunca antes, además de unirte a un selecto club de menos de 600 personas que han podido observar nuestro planeta de origen desde allí arriba. "
+    },
+    {
+        "id": 3,
+        "url": "./img/axiomSpaceStation.jpg",
+        "category": "Estación Espacial",
+        "company": "Axiom Space",
+        "name": "Axiom Space Station",
+        "altitude":400000,
+        "price": 33000000,
+        "location": "Órbita terrestre baja",
+        "duration": "10 días",
+        "description":"Visita la primer estación espacial privada, aprende sobre ciencia espacial en su laboratorio y disfruta de su diseño de clase mundial que permite a sus tripulantes obtener las mejores vistas del planeta Tierra."
+     },
+     {
+        "id": 4,
+        "url": "./img/ISS.jpg",
+        "category": "Estación Espacial",
+        "company": "Axiom Space",
+        "name":"International Space Station",
+        "altitude": 400000,
+        "price": 55000000,
+        "location":"Órbita terrestre baja",
+        "duration": "12 días",
+        "description":"Vive la magnífica experiencia de habitar en gravedad cero y observa la salida y puesta del sol cada 45 minutos , eso si puede lograr completar el  entrenamiento físico y mental nivel NASA de 3 meses."
+    },
+    {
+        "id": 5,
+        "url": "./img/dragonSpacex.jpeg",
+        "category":"Nave Espacial",
+        "company":"Blue Origin",
+        "name": "New Shepard rocket",
+        "altitude" : 1000000,
+        "price": 28000000,
+        "location": "Línea de Kármán",
+        "duration": "11 minutos",
+        "description": "Sé parte de un lanzamiento espacial estilo profesional y sobrepasa la frontera del espacio conocida como Línea de Kármán tripulando el cohete New Shepard, la nave espacial con la ventana más grande en  el mercado."
+    },
+    {
+        "id": 6,
+        "url": "./img/newShepardBlueOrigin.jpg",
+        "category":"Nave Espacial",
+        "company": "SpaceX",
+        "name": "Dragon spacecraft",
+        "altitude": 500000,
+        "price": 67000000,
+        "location": "Órbita terrestre baja",
+        "duration": "3 días",
+        "description": "Crea tu ruta personalizada para órbitar el planeta , ya que la nave espacial Dragon permite dibujar una ruta orbital a tu medida gracias a sus propulsores que permiten maniobrar la nave."
+
+    },
+    {
+        "id":7,
+        "url": "./img/artemisBaseCamp.webp",
+        "category":"Base Espacial",
+        "company": "NASA",
+        "name":"Artemis Base Camp",
+        "altitude": 384400000,
+        "price": 177000000,
+        "location":  "Shackleton Crater",
+        "duration": "3 meses",
+        "description": "Vive una temporada en la superficie lunar, disfrutando de las avanzadas instalaciones del campamento Artemis de la NASA."
+     },
+     {
+        "id": 8,
+        "url": "./img/darkSideUnknown.jpg",
+        "category": "Base Espacial",
+        "company":"Elite Mundial",
+        "name":"Unknown",
+        "altitude": 384400000,
+        "price": 333333333,
+        "location": "Darkside of the Moon",
+        "duration": "33 días",
+        "description": "Una experiencia para un selecto grupo a nivel mundial, conoce el enigma de la zona más inhóspita de nuestro satélite natural, eso luego de firmar un estricto contrato de confidencialidad."
+     }
+]

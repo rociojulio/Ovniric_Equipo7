@@ -1,0 +1,37 @@
+.footer{
+    width: 100vw;
+    background-image: linear-gradient(to top, #0c3483 0%, #a2b6df 100%, #6b8cce 100%, #a2b6df 100%);
+    position: absolute;
+    bottom: 0;
+    height: 5vh;
+    display: grid;
+    grid-template-columns: 10;
+    position: fixed;
+    bottom: 0;
+}
+
+
+.icon{
+    font-size: 1.5rem;
+    color:azure;
+    padding-left: 1vw;
+    padding-right: 1vw;
+}
+.icon :hover{
+    color:#1D295180;
+}
+
+.section{
+grid-column: 9/11;
+   justify-self: end;
+   margin-right: 2vw;
+  align-self: center;
+}
+
+.allrights{
+    height: 1rem;
+    color: snow;
+    align-self: center;
+    margin-left: 2vw;
+    margin-bottom: 0.5vw;
+}

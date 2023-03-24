@@ -1,0 +1,45 @@
+.contenedor{
+    width: 75%;
+    border-radius: 1rem;
+    background-color: transparent;
+    background-image: radial-gradient(at top center, rgba(255,255,255,0.03) 0%, rgba(0,0,0,0.03) 100%), linear-gradient(to top, rgba(255,255,255,0.1) 0%, rgba(143,152,157,0.60) 100%);
+    background-blend-mode: normal, multiply;
+    box-shadow: rgba(107, 140, 206, 0.4) -5px 5px, rgba(107, 140, 206, 0.3) -10px 10px, rgba(107, 140, 206, 0.2) -15px 15px, rgba(107, 140, 206, 0.1) -20px 20px, rgba(107, 140, 206, 0.05) -25px 25px, rgba(107, 140, 206, 0.4) 5px 5px, rgba(107, 140, 206, 0.3) 10px 10px, rgba(107, 140, 206, 0.2) 15px 15px, rgba(107, 140, 206, 0.1) 20px 20px, rgba(107, 140, 206, 0.05) 25px 25px;
+    margin: 3rem auto 7rem auto;
+    text-align: center;
+}
+
+.contenedor h1{
+    padding-top: 2rem;
+    font-weight: bold;
+}
+
+.imageSuccess{
+    width: 35%;
+}
+
+p{
+    color: black;
+    font-weight: bold;
+}
+
+
+.backHome{
+    color: azure;
+    background-color: transparent;
+    width: 15vw;
+    height: 30px;
+    border-radius: 10px;
+    font-weight: 900;
+    background-color: #0c3483;
+    border: solid 2px #0c3483;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    position: relative;
+    left: 10vw;
+    bottom: 4rem;
+}
+
+.backHome:hover{
+    background-color:  #a2b6df ;
+    color:#0c3483 ;
+}

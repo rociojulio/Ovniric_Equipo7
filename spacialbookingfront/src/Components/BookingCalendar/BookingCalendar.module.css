@@ -1,0 +1,97 @@
+.bookingCalendar{
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.letter{
+    font-weight: bold;
+    color: var(--color);
+}
+
+.sectionBooking{
+    text-align: center;
+    align-self: center;
+
+}
+
+.btnReserva{
+        margin-top: 2vw;
+        width:20vw;
+        margin-left: 3vw;
+        height: 5vh;
+        border-radius: 5px;
+        color: azure;
+        background-color: transparent;
+        border-radius: 10px;
+        font-weight: 900;
+        background-color: #0c3483;
+        border: solid 2px #0c3483;
+        box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+          
+    }
+
+    .btnReserva:hover{
+        background-color:  #a2b6df ;
+        color:#0c3483 ;
+      }
+      
+
+
+.calendarDouble h2{
+    position: relative;
+    left: 17%;
+    color: var(--color);
+}
+
+.calendarMobile {
+    display: none;
+}
+
+/* -------------------Tablet---------------- */
+@media only screen and (max-width: 992px) {
+    .bookingCalendar{
+        display: block;
+    }
+
+    .sectionBooking {
+        display: block;
+    }
+
+    .sectionBooking p {
+        margin: auto;
+    }
+
+    .sectionBooking button {
+        position: relative;
+        right: 1%;
+        height: 2rem;
+        width: 50%;
+        margin: 1%;
+    }
+ 
+}
+
+/* -------------Mobile----------- */
+@media only screen and (max-width: 590px) {
+    
+    .calendarSelect {
+        display: none;
+    }
+    .calendarMobile {
+        display: block;
+        margin: auto;
+    }
+
+    .sectionBooking {
+        display: block;
+    }
+
+    .sectionBooking button {
+        position: relative;
+        right: 1%;
+        height: 2rem;
+        width: 50%;
+        margin: 1%;
+    }
+}

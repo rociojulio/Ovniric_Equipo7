@@ -1,0 +1,134 @@
+.formProduct{
+    /* border: 10px solid purple; */
+    margin: 3rem 3rem 4rem 3rem;
+    /* background-color: rgb(162, 159, 159); */
+    border-radius: 1rem;
+    background-color: transparent;
+    background-image: radial-gradient(at top center, rgba(255,255,255,0.03) 0%, rgba(0,0,0,0.03) 100%), linear-gradient(to top, rgba(255,255,255,0.1) 0%, rgba(143,152,157,0.60) 100%);
+    background-blend-mode: normal, multiply;
+    box-shadow: rgba(107, 140, 206, 0.4) -5px 5px, rgba(107, 140, 206, 0.3) -10px 10px, rgba(107, 140, 206, 0.2) -15px 15px, rgba(107, 140, 206, 0.1) -20px 20px, rgba(107, 140, 206, 0.05) -25px 25px, rgba(107, 140, 206, 0.4) 5px 5px, rgba(107, 140, 206, 0.3) 10px 10px, rgba(107, 140, 206, 0.2) 15px 15px, rgba(107, 140, 206, 0.1) 20px 20px, rgba(107, 140, 206, 0.05) 25px 25px;
+
+}
+
+
+.informationProduct{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.informationProduct >div {
+    /* border: 1px solid blue; */
+    width: 90%;
+    margin: 0.5rem auto;
+}
+
+.informationProduct >div >div {
+    display: block;
+}
+
+.description {
+    /* border: 1px solid blue; */
+}
+
+.description >div{
+    width: 95%;
+    margin: 0.5rem auto;
+    display: block;
+}
+
+label::before {
+    content: "" !important;
+}
+
+.policyProduct{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 0 2%;
+}
+
+.policyProduct >div >div{
+    width: 95%;
+    margin: 0.5rem auto;
+    display: block;
+}
+
+.features >div >div >div >div >div >div >div{
+    /* border: 1px solid blue; */
+    display: block;
+    margin: 0 3%;
+}
+
+.features {
+    /* border: 1px solid cyan; */
+    height: 7rem;
+}
+
+.features span {
+    /* border: 1px solid greenyellow; */
+    font-size: 2rem;
+    color: white;
+    position: relative;
+    left: 60%;
+    bottom: 4.3rem;
+    
+}
+
+.images {
+    /* border: 1px solid cyan; */
+}
+
+.images >div >div {
+    display: block;
+    margin: 0 3%;
+}
+
+.images span {
+    color: white;
+    font-size: 2rem;
+    margin-left: 0.5%;
+    position: relative;
+    top: 0.3rem;
+}
+
+label {
+    color: var(--color);
+    font-weight: bold;
+}
+
+.formProduct h1, h2 {
+    color: #0c3483;
+    /* text-align: center; */
+}
+
+.formProduct h1 {
+    text-align: center;
+}
+
+.formProduct h2 {
+    margin: 0 2.7%;
+    border-bottom: 1px solid #0c3483;
+}
+
+.button{
+    color: azure;
+    background-color: transparent;
+    width: 17vw;
+    height: 33px;
+    border-radius: 10px;
+    font-weight: 900;
+    background-color: #0c3483;
+    border: solid 2px #0c3483;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.button:hover{
+    background-color:  #a2b6df ;
+    color:#0c3483 ;
+}
+
+.buttonAdd{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}

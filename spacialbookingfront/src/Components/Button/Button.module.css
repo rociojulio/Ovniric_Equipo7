@@ -1,0 +1,55 @@
+.button {
+    background:  #1e3c72;
+    border: none;
+    border-radius: 25px;
+    color: snow;
+    cursor: pointer;
+    font-size: 1.25em;
+    letter-spacing: .1em;
+    outline: none;
+    padding: .75em 2em;
+    position: relative;
+    text-transform: uppercase;
+ }
+
+ @keyframes glow {
+    0% {
+      background: #1e3c72
+    }
+    25% {
+      background:  #1e3c72 ;
+    }
+    100% {
+      background: #2a5298
+    }}
+  
+
+  
+  .button:hover {
+    animation: glow 1s ease-in infinite;
+  }
+
+  .button::before {
+    animation: glow 1s ease-in infinite;
+    background: #1e3c72 ;
+    border-radius: inherit;
+    content: '';
+    filter: blur(10px);
+    opacity: .75;
+    position: absolute;
+    transition: all .3s ease-in-out;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    z-index: -1;
+  }
+
+  .button:hover::before {
+    filter: blur(20px);
+    opacity: 1;
+  }
+
+  
+
+  

@@ -1,0 +1,168 @@
+
+.registerTemplate{
+    background-color: transparent;
+    background-image: var(--backImage);
+    box-shadow: rgba(107, 140, 206, 0.4) -5px 5px, rgba(107, 140, 206, 0.3) -10px 10px, rgba(107, 140, 206, 0.2) -15px 15px, rgba(107, 140, 206, 0.1) -20px 20px, rgba(107, 140, 206, 0.05) -25px 25px, rgba(107, 140, 206, 0.4) 5px 5px, rgba(107, 140, 206, 0.3) 10px 10px, rgba(107, 140, 206, 0.2) 15px 15px, rgba(107, 140, 206, 0.1) 20px 20px, rgba(107, 140, 206, 0.05) 25px 25px;
+    width: 30vw;
+    margin: auto;
+    margin-top: 1vw;
+    height: 80vh;
+    display: grid;
+    border-radius: 10px;
+    grid-template-rows: 5% 95% ;
+    grid-template-columns: repeat(1,1fr);
+}
+
+.buttonClosed button{
+    float: right;
+    background-color: transparent;
+    border-radius: 1vh;
+}
+
+
+.form{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: repeat(9,1fr);
+    text-align: center;
+}
+
+
+.label{
+    text-align: left;    
+}
+.inputs{
+    width: 25vw;
+    height: 1.5vw;
+    border-radius: 0.5vw;
+}
+
+.formulario__inputError{
+ display: none;
+}
+
+.form h2 {
+    color: #1D2951;
+}
+.inputsContainer{
+    display: grid;
+    justify-content: center;
+    height: 8vh;
+    margin: 0;
+    align-items: center;
+}
+
+
+.buttonSignup {
+    color: azure;
+    background-color: transparent;
+    width: 15vw;
+    height: 33px;
+    border-radius: 10px;
+    margin-top: 1vw;
+    font-weight: 900;
+    background-color: #0c3483;
+    border: solid 2px #0c3483;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.buttonSignup:hover{
+    background-color:  #a2b6df ;
+    color:#0c3483 ;
+} 
+
+
+
+@media only screen and (max-width: 1400px) {
+    html {
+        font-size: 30px;
+        box-sizing: border-box;
+    }
+
+
+    .form input {
+        width: 35vw;
+        height: 3.5vh;
+    }
+
+    .form .fullName input {
+        width: 16vw;
+        height: 3.5vh;
+        margin-left: 65%;
+    }
+
+
+    .form .buttonSignup{
+        font-size: 22px;
+    }
+
+    .form p{
+        font-size: 18px;
+        padding-bottom: 20px;
+    }
+
+    .form label{
+        display: block;
+        text-align: left;
+        margin-left: 32%;
+    }
+    
+    .form .fullName {
+        display: flex;
+        margin-left: 21%;
+        gap: 30px;
+    }
+    
+    .fullName label{
+        display: block;
+        text-align: left;
+        margin-left: 65%;
+    }
+    
+    .form input{
+        margin-right: 1%;
+    }
+}  
+
+@media only screen and (max-width: 481px) {
+    html {
+        font-size: 18px;
+        box-sizing: border-box;
+    }
+
+    .form .buttonSignup{
+        font-size: 12px;
+    }
+
+    .form button{
+        width: 22vw;
+        height: 40px;
+    }
+
+    .form p{
+        font-size: 11px;
+    }
+
+    .form .fullName{
+        flex-direction: column;
+        text-align: start;
+        gap: 0;
+    }
+
+    .fullName div {
+        text-align: start;
+    }
+
+    .fullName label {
+        margin-left: 14%;
+    }
+
+    .form .fullName input {
+        margin-left: 14%;
+        width: 34vw;
+    }
+    
+}
+
+
+

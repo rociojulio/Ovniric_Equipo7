@@ -1,0 +1,76 @@
+stages:
+    - build
+    - deploy
+
+build_backend:
+    stage: build
+    image:  maven:3.8.6-openjdk-18
+    script:
+        - cd Backend
+        - echo "Building app..."
+        - mvn clean install
+        - echo "Finished building the app."
+    artifacts:
+        expire_in: 1 week
+        paths:
+            - Backend/target/ovniric-0.0.1-SNAPSHOT.jar
+    rules:
+        - changes: 
+            - Backend/**/*
+
+build_frontend :
+    stage: build
+    image: node:latest
+    script:
+        - echo "Building the app"
+        - cd spacialbookingfront/
+        - ls 
+        - npm --force install
+        - CI=false npm run build
+    artifacts:
+        expire_in: 1 week
+        paths:
+        - spacialbookingfront/build
+    rules:
+        - changes: 
+            - spacialbookingfront/**/*
+
+
+deploy_Backend:
+    stage: deploy
+    needs: [build_backend]
+    image: alpine:3.11
+    before_script:
+        - apk update && apk add openssh-client bash
+        - mkdir -p ~/.ssh
+        - chmod 700 ~/.ssh
+        - eval $(ssh-agent -s)
+        - echo "$SSH_PRIVATE_KEY" | tr -d '\r' | ssh-add -
+        - touch ~/.ssh/config
+        - echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config
+        - ssh-keyscan -H "$SERVER_IP" >> ~/.ssh/known_hosts
+        - chmod 644 ~/.ssh/known_hosts
+    script:
+        - echo "Deploying started..."
+        - ssh ubuntu@$SERVER_IP "sudo systemctl stop ovniric.service"
+        - scp Backend/target/ovniric-0.0.1-SNAPSHOT.jar ubuntu@$SERVER_IP:~/artifacOvniric/
+        - ssh ubuntu@$SERVER_IP "sudo systemctl start ovniric.service"
+        - echo "Finished deploying the app."
+    rules:
+        - changes: 
+            - Backend/**/*    
+
+deploy_Frontend:
+   stage: deploy
+   needs: [build_frontend]
+   image: python:latest 
+   script:
+      - pip install awscli --upgrade awscli
+      - pip install --upgrade pip 
+      - aws configure set aws_secret_key_id $AWS_ACCESS_KEY_ID
+      - aws configure set aws_secret_access_key $AWS_SECRET_ACCESS_KEY
+      - aws s3 sync spacialbookingfront/build s3://grupo7
+   rules:
+        - changes: 
+            - spacialbookingfront/**/*
+    

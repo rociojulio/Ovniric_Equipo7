@@ -1,0 +1,30 @@
+/* :root {
+  --background :linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.25) 200%);
+  --bar: linear-gradient(to bottom, #0c3483 0%, #a2b6df 100%, #6b8cce 100%, #a2b6df 100%);
+  --backImage : radial-gradient(at top center, rgba(255,255,255,0.03) 0%, rgba(0,0,0,0.03) 100%), linear-gradient(to top, rgba(255,255,255,0.1) 0%, rgba(143,152,157,0.60) 100%);
+  --primary-color: #a7afc7;
+  --secondary-color: #1D2951;
+  --tertiary-color: #333;
+  --fourth-color:#4C3B71;
+  --icon-size: 24px;
+  --font-size: 16px;
+  background: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.25) 200%);
+} */
+:root {
+  --background : linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
+  --bar: linear-gradient(to bottom, #0c3483 0%, #a2b6df 100%, #6b8cce 100%, #a2b6df 100%);
+  --backImage : linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  --primary-color: #a7afc7;
+  --secondary-color: #1D2951;
+  --tertiary-color: #333;
+  --fourth-color:#4C3B71;
+  --icon-size: 24px;
+  --font-size: 16px;
+  --color: #3F3F3F;
+  background-color: azure;
+}
+
+body{
+  background: var(--background);
+}
+

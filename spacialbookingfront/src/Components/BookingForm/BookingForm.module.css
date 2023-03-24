@@ -1,0 +1,101 @@
+:root {
+    --color-label: var(--color);
+    --color-input: rgba(255, 255, 255, 0.5);
+}
+
+.containerForm{
+    margin: 0;
+    align-self: center;
+    margin: 0;
+}
+
+.selectTime{
+    border: 1px solid red;
+}
+
+.form {
+    padding: 1vw;
+    border-radius: 10px;
+    width: 58vw;
+    background-color: transparent;
+    background-image: var(--backImage);
+    background-blend-mode: normal, multiply;
+    transition: all .2s ease-in-out;
+    box-shadow: rgba(107, 140, 206, 0.4) -5px 5px, rgba(107, 140, 206, 0.3) -10px 10px, rgba(107, 140, 206, 0.2) -15px 15px, rgba(107, 140, 206, 0.1) -20px 20px, rgba(107, 140, 206, 0.05) -25px 25px;
+}
+
+.form:hover{
+    transform: scale(1.01);
+}
+
+
+.form label{
+    color: var(--color);
+}
+
+
+.form input {
+    color: red;
+    justify-self: flex-end;
+}
+
+
+
+.form form {
+    /* border: 10px solid red; */
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.letterP {
+    padding: 2vw;
+    background-color:transparent;
+    border-radius: 10px;
+    width: 57vw;
+    background-image: radial-gradient(at top center, rgba(255,255,255,0.03) 0%, rgba(0,0,0,0.03) 100%), linear-gradient(to top, rgba(255,255,255,0.1) 0%, rgba(143,152,157,0.60) 100%);
+    background-blend-mode: normal, multiply;
+    box-shadow: rgba(107, 140, 206, 0.4) -5px 5px, rgba(107, 140, 206, 0.3) -10px 10px, rgba(107, 140, 206, 0.2) -15px 15px, rgba(107, 140, 206, 0.1) -20px 20px, rgba(107, 140, 206, 0.05) -25px 25px;
+}
+
+.letterP:hover{
+    transform: scale(1.01);
+}
+
+.letterP p{
+    color: var(--color);
+    font-weight: 600;
+}
+
+.calendarContainer{
+    width: 58vw;
+    background-image: radial-gradient(at top center, rgba(255,255,255,0.03) 0%, rgba(0,0,0,0.03) 100%), linear-gradient(to top, rgba(255,255,255,0.1) 0%, rgba(143,152,157,0.60) 100%);
+    background-blend-mode: normal, multiply;
+    border-radius: 20px;
+    padding: 1vw;
+    box-shadow: rgba(107, 140, 206, 0.4) -5px 5px, rgba(107, 140, 206, 0.3) -10px 10px, rgba(107, 140, 206, 0.2) -15px 15px, rgba(107, 140, 206, 0.1) -20px 20px, rgba(107, 140, 206, 0.05) -25px 25px;
+}
+.calendarContainer:hover{
+    transform: scale(1.01);
+}
+.bookingTitles{
+    color:var(--color);
+    font-weight: 800;
+    font-size: 20px;
+    padding: 0.5vw;
+}
+
+@media screen and (max-width:992px) {
+    .form{
+        width: 85vw;
+    }
+    .calendarContainer{
+        width: 85vw;
+    }
+
+    .letterP{
+        width: 85vw;
+    }
+    
+}

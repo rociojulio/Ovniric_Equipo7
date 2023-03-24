@@ -1,0 +1,29 @@
+.reservationInfoContainer{
+    display: grid;
+    grid-template-columns: 35vw 35vw 30vw;
+    padding-bottom: 3vw;
+    
+}
+
+.form{
+    grid-column: 1 / span 2;    
+    justify-self: center;
+}
+
+.reservationCard{
+    grid-column: 3 / 4;
+    align-items: center;
+}
+
+@media screen and (max-width: 992px) {
+    .reservationInfoContainer{
+        grid-template-columns: 1fr;
+    }
+    .form{
+        grid-column: 1/2;
+    }
+    .reservationCard{
+        grid-column: 1/2;
+    }
+    
+}

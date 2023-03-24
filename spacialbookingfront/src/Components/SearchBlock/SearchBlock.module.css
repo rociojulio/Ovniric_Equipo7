@@ -1,0 +1,44 @@
+.shadow{
+    padding: 20px;
+    
+}
+.searchP{
+    margin: 1vw;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--color);
+    margin: 0;
+
+}
+
+.searchBlock {   
+    padding-top: 2.4vh;
+    grid-template-columns: repeat(1, 1fr);    
+    grid-gap: 10px;      
+    height:auto;
+    border-radius: 5px;
+    padding-bottom:1.5vh;
+    text-align: center;
+    background-color: transparent;
+    background-image: var(--backImage);
+    background-blend-mode: normal, multiply;
+    box-shadow: rgba(107, 140, 206, 0.4) -5px 5px, rgba(107, 140, 206, 0.3) -10px 10px, rgba(107, 140, 206, 0.2) -15px 15px, rgba(107, 140, 206, 0.1) -20px 20px, rgba(107, 140, 206, 0.05) -25px 25px, rgba(107, 140, 206, 0.4) 5px 5px, rgba(107, 140, 206, 0.3) 10px 10px, rgba(107, 140, 206, 0.2) 15px 15px, rgba(107, 140, 206, 0.1) 20px 20px, rgba(107, 140, 206, 0.05) 25px 25px;
+   
+}
+
+#titleSearch h1{    
+    margin: 0;
+    color: var(--color);
+}
+
+/*________________________________________Tablet_______________________*/
+
+@media only screen and (max-width: 590px){
+    .searchBlock {   
+        height:auto;
+        padding-top: 1vw;       
+    }
+    .searchBlock h1{
+        font-size: 20px;
+    }
+}
